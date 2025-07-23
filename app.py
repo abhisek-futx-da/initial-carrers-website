@@ -35,7 +35,7 @@ def hello_jovian():
                            jobs=JOBS, 
                            company_name='Jovian')
 
-@app.route("/jobs")
+@app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
 
